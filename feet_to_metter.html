@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi từ feet sang metter</title>
+</head>
+<body>
+<script>
+    function feetToMetter(feet){
+        return 0.305 * feet;
+    }
+
+    function metterToFeet(metter){
+        return 3.279 * metter;
+    }
+
+    let feet = +prompt("nhập feet");
+    document.write(feet + " feet " + "= " + feetToMetter(feet) + " metter");
+    document.write("<br/>");
+    let metter = +prompt("nhập metter");
+    document.write(metter + " metter " + "= " + metterToFeet(metter) + " feet");
+</script>
+</body>
+</html>
